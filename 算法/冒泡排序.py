@@ -1,5 +1,5 @@
 def maopao_sort(list):
-    b = len(list)
+    b = len(list) - 1               #大循环进行i-1次，即可把i-1个数从右往左从大到小放好，这样最左边就是最小的数，故b = len(list) - 1
     for i in range(b):
         for j in range(b - i - 1):
             if list[j] > list[j + 1]:
