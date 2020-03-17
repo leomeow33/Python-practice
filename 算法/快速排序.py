@@ -12,10 +12,10 @@ def quick_sort(alist, start, end):   #快速排序
         alist[left] = alist[right]
         while left < right and alist[left] < mid:           # 左边游标移动，右边游标不动，从左向右找比基准大的数字
             left += 1
-        alist[right] = alist[left]                          # 退出循环后 left与right重合，即相等
-    alist[left] = mid                                       # 递归的方式排左边的序列
-    quick_sort(alist, start, left - 1)                      # 递归的方式排右边的序列
-    quick_sort(alist, left + 1, end)
+        alist[right] = alist[left]
+    alist[left] = mid                                       # 一次排序，排出以基准为分割的左右两堆无序数组退出循环后 left与right重合，此时所指位置为基准元素的正确位置
+    quick_sort(alist, start, left - 1)                      # 递归的方式排左边的序列
+    quick_sort(alist, left + 1, end)                        # 递归的方式排右边的序列
 
 
 alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]

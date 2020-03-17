@@ -1,10 +1,9 @@
-for num in range(0,50):
-    for i in range(2,num):
-        if num%i == 0:
-            j = num/i
-            print('%d等于%d * %d'%(num,i,j))
-            break
+def solution(body1x,body2x,pointx1，pointx2):
+    pointx = min(pointx1,pointx2)
+    if body1x < pointx and body2x > pointx:
+        print('相交')
+    elif body2x < pointx:
+        print('人在线左侧')
     else:
-        print(num,'是一个质数')
-
+        print('人在线右侧')
 
