@@ -1,4 +1,4 @@
-c = [i for i in range(1,101)]  #c0=1 c1=2 c2=3 c3=4   m=3时，  c2退出。 c3变成c0  c0 c1续到最后   c3: 1
+c = [i for i in range(1,14)]  #c0=1 c1=2 c2=3 c3=4   m=3时，  c2退出。 c3变成c0  c0 c1续到最后   c3: 1
 m = int(input())
 if m <=1 or m >= 100:
     print('ERROR!')

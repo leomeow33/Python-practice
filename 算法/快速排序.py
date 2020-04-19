@@ -18,7 +18,7 @@ def quick_sort(alist, start, end):   #快速排序
     quick_sort(alist, left + 1, end)                        # 递归的方式排右边的序列
 
 
-alist = [54, 26, 93, 17, 77, 31, 44, 55, 20]
+alist = [5,44,332,7,9858,13231,0,-1]
 print("原列表为：%s" % alist)
 quick_sort(alist, 0, len(alist) - 1)
 print("新列表为：%s" % alist)
